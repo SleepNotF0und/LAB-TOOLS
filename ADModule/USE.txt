@@ -1,0 +1,16 @@
+##First
+========
+
+Import-Module .\Microsoft.ActiveDirectory.Management.dll
+
+Import-Module .\ActiveDirectory.psd1
+
+
+
+=====================================
+
+Get-ADUser -filter * -Properties * | select samaccountname, description
+
+Get-ADGroup 'domain admins' -Properties *
+
+Get-ADComputer -filter *
